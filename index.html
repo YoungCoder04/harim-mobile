@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하림 모바일</title>
+    <!-- 파비콘 삽입 -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- 1. 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 2. 공통서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <!-- 3. 모바일 화면서식 -->
+    <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+    <!-- 4. 태블릿 화면서식 -->
+    <link rel="stylesheet" href="./css/tabelt.css" type="text/css">
+    <!-- 5. 컴퓨터 화면서식-->
+    <link rel="stylesheet" href="./css/pc.css" type="text/css">
+    <!-- 플렉스 슬라이드 서식 -->
+    <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+    <!--다크모드 서식-->
+    <script src="./script/main.js" defer></script>
+
+    <!-- 아이콘 서식 -->
+    <script src="https://kit.fontawesome.com/f41cffcdb0.js" crossorigin="anonymous"></script>
+    
+
+    <!-- 벤더프리픽스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    <!--제이쿼리 소스-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 플렉스 슬라이드 제이쿼리 소스 -->
+    <script src="./script/jquery.flexslider.js"></script>
+    
+</head>
+<body>
+    
+    <!-- 1.헤더영역 -->
+    <header>
+        <input type="checkbox" id="toggle">
+        <div class="header_inner">
+            <h1>
+                <a href="m_harim.html" title="메인페이지 바로가기"><img src="./images/h_logo.jpg" alt=""></a>
+            </h1>
+           
+            <i class="fas fa-search search1"></i>
+            <label for="toggle" class="toggle_btn"><i class="fas fa-bars"></i></label> <!--내비게이션 열기-->
+
+            <!--메인메뉴-->
+            <nav class="gnb">
+                <label for="toggle"><i class="fas fa-times"></i></label> <!--내비게이션 닫기-->
+                
+                <ul>
+                    <li><input type="text" name="검색창" class="gnb_search" placeholder="검색어를 입력하세요"><i class="fas fa-search search2"></i></li>
+                    <li><a href="hariminfo.html" title="하림소개">하림소개<i class="fas fa-angle-down"></i></a></li>
+                    <ul class="sub">
+                        <li><a href="hariminfo.html" title="기업소개">기업소개</a></li>
+                        <li><a href="business.html" title="사업소개">사업소개</a></li>
+                        <li><a href="invest.html" title="투자정보">투자정보</a></li>
+                        <li><a href="esg.html" title="ESG 평가 자료실">ESG 평가 자료실</a></li>
+                        <li><a href="workplace.html" title="사업장 안내">사업장 안내</a></li>
+                    </ul>
+
+                    <li><a href="product.html" title="제품정보">제품정보<i class="fas fa-angle-down"></i></a></li>
+                    <ul class="sub">
+                        <li><a href="product.html" title="기업소개">기업소개</a></li>
+                        <li><a href="brand.html" title="브랜드관">브랜드관</a></li>
+                        <li><a href="fullproduct.html" title="전체제품">전체제품</a></li>
+                        <li><a href="gift.html" title="선물세트">선물세트</a></li>
+                    </ul>
+
+                    <li><a href="marketing.html" title="홍보센터">홍보센터<i class="fas fa-angle-down"></i></a></li>
+                    <ul class="sub">
+                        <li><a href="marketing.html" title="뉴스룸">뉴스룸</a></li>
+                        <li><a href="report.html" title="보도자료">보도자료</a></li>
+                        <li><a href="video.html" title="영상자료">영상자료</a></li>
+                        <li><a href="sns.html" title="하림 SNS">하림 SNS</a></li>
+                        <li><a href="fieldtrip.html" title="견학신청">견학신청</a></li>
+                        <li><a href="event.html" title="이벤트">이벤트</a></li>
+                    </ul>
+
+                    <li><a href="servicecenter.html" title="고객센터">고객센터<i class="fas fa-angle-down"></i></a></li>
+                    <ul class="sub">
+                        <li><a href="servicecenter.html" title="상담처리절차">상담처리절차</a></li>
+                        <li><a href="FAQ.html" title="FAQ">FAQ</a></li>
+                        <li><a href="custormeropinion.html" title="고객의 소리">고객의 소리</a></li>
+                        <li><a href="inquiry.html" title="문의결과 조회">문의결과 조회</a></li>
+                    </ul>
+
+                    <li><a href="employ.html" title="채용정보">채용정보<i class="fas fa-angle-down"></i></a></li>
+                    <ul class="sub">
+                        <li><a href="employ.html" title="채용공고">채용공고</a></li>
+                        <li><a href="development.html" title="인재육성">인재육성</a></li>
+                        <li><a href="jobinfo.html" title="직무소개">직무소개</a></li>
+                    </ul>
+
+                    <li><a href="ethics.html" title="윤리경영">윤리경영<i class="fas fa-angle-down"></i></a></li>
+                    <ul class="sub">
+                        <li><a href="ethics.html" title="윤리헌장">윤리헌장</a></li>
+                        <li><a href="standard.html" title="윤리기준">윤리기준</a></li>
+                        <li><a href="activities.html" title="사회공헌활동">사회공헌활동</a></li>
+                        <li><a href="management.html" title="안전보건경영">안전보건경영</a></li>
+                        <li><a href="growth.html" title="동반성장">동반성장</a></li>
+                        <li><a href="anonymousreport.html" title="익명제보">익명제보</a></li>
+                    </ul>
+
+                </ul>
+            </nav>
+        
+        </div>
+    </header>
+
+    <!-- 2.메인콘텐츠 시작 -->
+    <main>
+        <article class="slide">
+            <h2>비주얼 슬라이드</h2>
+            <div class="flexslider mslide">
+                <ul class="slides">
+                    <li><a href="#" title="배너1"><img src="./images/banner2-1.jpg" alt="하림 제품1"></a></li>
+                    <li><a href="#" title="배너2"><img src="./images/product_banner1.png" alt="하림 제품2"></a></li>
+                    <li><a href="#" title="배너3"><img src="./images/banner1-1.jpg" alt="하림 제품3"></a></li>
+                </ul>
+            </div>
+        </article>
+
+        <section class="con">
+        <h2>콘텐츠영역</h2>
+        <article class="youtube">
+            <h2>하림 공식 유튜브</h2>
+                <video width="100%" src="./video/harim_video.mp4" controls autoplay muted></video>
+        </article>
+
+        <article class="sns">
+            <h2>sns</h2>
+            <a href="https://www.instagram.com/harim_natural/" title="인스타그램">
+                <img src="./images/instagram.png" alt="메인01">
+            </a>
+            <a href="https://ko-kr.facebook.com/harimslim/" title="페이스북">
+                <img src="./images/facebook1.png" alt="메인01">
+            </a>
+            <a href="https://www.youtube.com/c/%ED%95%98%EB%A6%BCTV" title="유튜브">
+                <img src="./images/youtube_img.jpg" alt="메인01">
+            </a>
+        </article>
+
+        <article class="product1">
+            <h2>신제품</h2>
+            <ul>
+                <li>
+                    <a href="#" title="닭다리">
+                        <img src="./images/product1-1.jpg" alt="닭다리">
+                        <span>기름없이 튀겨 겉바속촉! 닭다리</span>
+                        <span>에어프라이어에 조리해 기름기는 쏙 빠지고...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="닭날개봉">
+                        <img src="./images/product1-2.jpg" alt="닭날개봉">
+                        <span class="txt01">기름없이 튀겨 겉바속촉! 닭다리</span>
+                        <span>에어프라이어에 조리해 기름기는 쏙 빠지고...</span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <article class="product2">
+            <h2>인기상품</h2>
+            <ul>
+                <li>
+                    <a href="https://www.kurly.com/goods/5069883" title="치킨 너겟">
+                        <img src="./images/product2-1.jpg" alt="치킨 너겟">
+                        <span>여덟가지 다채로운 모양을 지닌 하림 치킨너겟!</span>
+                        <span>하트부터 별모양까지 비주얼...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.kurly.com/goods/5069882" title="용가리 치킨">
+                        <img src="./images/product2-2.jpg" alt="용가리 치킨">
+                        <span>다섯 가지 공룡 모양을 지닌 용가리 치킨너겟!</span>
+                        <span>국내산 닭고기에 노릇노릇한 튀김...</span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+
+        <!-- <article class="map">
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1140.0993004284323!2d127.04073274985929!3d36.07671861784035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357011ff437e6edb%3A0x247f833056716b32!2z7KCE652867aB64-EIOydteyCsOyLnCDrp53shLHrqbQg66ed7ISx66GcIDE0!5e0!3m2!1sko!2skr!4v1663314411197!5m2!1sko!2skr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article> -->
+        <article class="map">
+        <h2>사업장 안내</h2>
+        <article class="tab_menu">  
+            <ul class="list">
+              <li class="on">
+                <a href="#tab1" class="btn"><h2>익산도계공장</h2></a>
+                <div id="tab1" class="cont"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1140.0993004284323!2d127.04073274985929!3d36.07671861784035!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357011ff437e6edb%3A0x247f833056716b32!2z7KCE652867aB64-EIOydteyCsOyLnCDrp53shLHrqbQg66ed7ISx66GcIDE0!5e0!3m2!1sko!2skr!4v1663314411197!5m2!1sko!2skr" width="100%" height="320px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              </li>
+              <li>
+                <a href="#tab2" class="btn"><h2>정읍도계공장</h2></a>
+                <div id="tab2" class="cont"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6486.822330080288!2d126.90875500000001!3d35.617589!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3571b4350c827115%3A0x10b29fbf34e66744!2z7KCE652867aB64-EIOygleydjeyLnCDrtoHrqbQgM-yCsOuLqDLquLggOTU!5e0!3m2!1sko!2skr!4v1663835548484!5m2!1sko!2skr" width="100%" height="320px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              </li>
+              <li>
+                <a href="#tab3" class="btn"><h2>하림정읍사료공장</h2></a>
+                <div id="tab3" class="cont"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6480.65851993639!2d126.8956432!3d35.6935143!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35704b3be63a5495%3A0x23a4bc484ffb965!2z7ZWY66a87KCV7J2N7IKs66OM6rO17J6l!5e0!3m2!1sko!2skr!4v1663913906767!5m2!1sko!2skr" width="100%" height="320px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              </li>
+            </ul>
+          </article>
+        </article>
+    </section>
+    </main>
+
+    <!-- 3.푸터영역 시작 -->
+    <footer>
+        <nav class="sns">
+            <ul>
+              <li><a href="s.html" title="유튜브"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="f.html" title="페이스북"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="t.html" title="트위터"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="i.html" title="인스타그램"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="b.html" title="블로그"></a></li>
+            </ul>
+          </nav>
+          <a href="#" class="top_btn" title="위로 바로가기"><img src="./images/top_button.png" alt="탑 버튼"></a>
+          <address>
+            <p>개인정보처리방침 이용약관 이메일무단수집거부 사업부서안내 생산이력관리</p>
+            <p>주소 : 전라북도 익산시 망성면 망성로 14(54517)|(주)하림 Tel 063-860-2114|Fax 063-861-7857
+                고객지원실 : 080-254-2000(가공), 080-259-2000(신선)</p>
+            <p>Copyright © 2019 HARIM.Corporation. All Rights Reserved.</p>
+          </address>
+    </footer>
+
+    <!-- <script>
+        //다크모드 함수
+        let n = 1;
+        function dark_mode(){
+        if(n==1){ //버튼 클릭시 어둡게 서식을 적용
+            document.bgColor='#333';
+            document.fgColor="#fff";
+            console.log(n);
+            n=0;
+        }else{ //버튼 누르면 다시 원래대로 밝게 서식을 적용
+            document.bgColor='#fff';
+            document.fgColor="#000";
+            console.log(n);
+            n=1;
+        }      
+        }
+
+        // 이벤트
+        const d_btn = document.querySelector('#dark_btn');
+        d_btn.addEventListener('click', function(){
+        dark_mode();
+        });
+
+    </script> -->
+
+    <script>
+        // Can also be used with $(document).ready()
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "fade"
+      });
+    });
+      </script>
+
+    <!--탭메뉴 스크립트-->
+    <script>
+        //li태그를 변수에 담는다.
+        const tabList = document.querySelectorAll('.tab_menu .list li');
+
+        for(let i=0;i<tabList.length;i++){ //li태그의 개수만큼 반복하여 기능을 설정함.
+        tabList[i].querySelector('.btn').addEventListener('click', function
+        (e){
+            e.preventDefault(); //클릭시 이벤트를 무력화하여 아무일도 없게 함.
+
+            for(var j = 0; j < tabList.length; j++){ //li태그 on클래스 적용
+            tabList[j].classList.remove('on');
+            }
+            this.parentNode.classList.add('on'); //사용자가 선택한 항목에 on클래스 적용
+        });
+        }
+    </script>
+
+</body>
+</html>
+
